@@ -15,6 +15,9 @@ $breakpoint2: "min-width: 600px";
     background: green;
   }
   
+  .row {
+    flex-direction: row;
+  }
 
 }
 @media ($breakpoint2) {
