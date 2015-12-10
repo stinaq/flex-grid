@@ -4,3 +4,21 @@ $breakpoint2: "min-width: 600px";
 * {
   box-sizing: border-box;
 }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media ($breakpoint1) {
+  html {
+    background: green;
+  }
+  
+
+}
+@media ($breakpoint2) {
+  html { 
+    background: pink; 
+  }
+}
