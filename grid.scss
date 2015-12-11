@@ -12,6 +12,11 @@ $numberOfColumns: 12;
   justify-content: space-between;
   flex-direction: column;
 }
+@for $i from 1 through $numberOfColumns {
+  .md-col-#{$i} {
+    flex-grow: $i;
+  }
+}
 @media ($breakpoint1) {
   html {
     background: green;
