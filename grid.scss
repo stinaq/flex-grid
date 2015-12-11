@@ -24,4 +24,13 @@ $breakpoint2: "min-width: 600px";
   html { 
     background: pink; 
   }
+}$colors: #1abc9c, #2ecc71, #3498db, #9b59b6, #f1c40f, #e74c3c, #2980b9, #d35400, #f39c12, #95a5a6, #c0392b, #8e44ad;
+
+#{$all-columns}{
+  @for $i from 1 through $numberOfColumns {
+    &:nth-child(#{$i}) { 
+     background: nth($colors, $i)
+
+    }
+  }
 }
